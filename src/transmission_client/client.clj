@@ -92,11 +92,11 @@
        (into [])))
 
 (def mappers ^{:private true}
-  {:status #(get status_map %)
-   :error #(get error_type %)
-   :eta #(get eta_map %)
-   :uploadRatio #(get ratio_map %)
-   :etaIdle #(get eta_map %)
+  {:status #(get status-map %)
+   :error #(get error-type %)
+   :eta #(get eta-map %)
+   :uploadRatio #(get ratio-map %)
+   :etaIdle #(get eta-map %)
    :pieces pieces-decoder})
 
 (defn- parse-torrent-get-item [item]
